@@ -15,7 +15,94 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+.fabs {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.fab__options {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  overflow: hidden;
+  transition:  3333ms ;
+}
+
+.show__allFab {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 180px;
+  background: transparent;
+  right: 25px;
+  border-radius: 10px;
+  transition: 1600ms ease-in-out;
+}
+
+.fab__wrapper {
+  z-index: 1000;
+  background-color: goldenrod;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fab__icon {
+  font-size: 28px;
+  color: #fff;
+}
+
+.globe {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.scene-container {
+  min-width: 800px !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+canvas {
+  display: flex;
+  min-width: 200px;
+  margin-left: 100px;
+}
+/* 
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #172b35 !important;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+} */
+
+@media screen and (min-width: 720px) {
+  canvas {
+    display: flex;
+    min-width: 200px;
+    margin-left: 350px;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +110,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */

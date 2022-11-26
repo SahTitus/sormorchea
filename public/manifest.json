@@ -1,0 +1,12 @@
+{
+    "name": "Sormorchea",
+    "short_name": "Sormorchea",
+    "theme_color": "#fff",
+    "background_color": "#fafafa",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "id": "/",
+    "icons": []
+  }
+  

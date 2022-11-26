@@ -1,0 +1,41 @@
+.whyUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 270px;
+  max-width: 300px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 15px 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px 15px 15px;
+}
+
+.text p:first-child {
+  text-align: center;
+  color: #ff9408;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .whyUs {
+    min-width: 380px !important;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .whyUs {
+    min-width: 330px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .whyUs {
+    min-width: 400px;
+  }
+}

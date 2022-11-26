@@ -1,129 +1,144 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 70px;
 }
 
-.footer {
+.home > img {
+  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.carousel{
+  height: 430px;
+  width: 100%;
+}
+
+.home__typical {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.footer a {
+.home__typical > h1 {
+  color: #09294e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 21px;
+}
+
+.who__weAreDiv {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  margin-bottom: 50px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.who__weArecontainer {
+  background-color: white;
+  padding: 10px 20px;
+  width: 95%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.who__weArecontainer p:first-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: #09294e;
+  margin-bottom: 20px;
   text-align: center;
+  justify-content: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.who__weArecontainer > p {
+  font-size: 17px;
   display: flex;
   align-items: center;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.whyUs {
+  width: 100%;
+  background-color: #c59225;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.whyUs__cards {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  overflow: hidden;
+  align-items: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.whyUs__caption {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.home__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.name__marqueeWrapper{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.name__marquee {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(48, 46, 44);
+  width: 90%;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.07);
+  color: #fff;
+  height: 100px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.name__marquee marquee{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 25px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.faqs{
+  padding: 0 20px;
+  margin:40px 0 ;
+  height: 800px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.faqs__caption{
+  text-align: center;
+  font-weight: 500;
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 720px) {
+  /* .whyUs__cards{
+    flex-direction:row ;
+    justify-content: center;
+ 
+  } */
 }

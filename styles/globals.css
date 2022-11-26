@@ -94,6 +94,24 @@ canvas {
   z-index: 0;
 } */
 
+.slick-prev,
+.slick-next {
+  position: fixed !important;
+color: blue;
+background: rgb(160, 158, 158) ! important;
+height: 40px ! important;
+width: 40px ! important;
+border-radius: 50%;
+z-index: 1000 !important;
+}
+
+.slick-next{
+  right: 5% !important;
+}
+.slick-prev{
+  left: 5% !important;
+}
+
 @media screen and (min-width: 720px) {
   canvas {
     display: flex;

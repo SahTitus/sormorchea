@@ -1,50 +1,50 @@
-@media (max-width:700px){
-    .img>img{
-        width: 100%;
-        object-fit: cover;
-        }
-    .carousel{
-        margin-left: 0;
-        margin-right: 0;
-        z-index: 10;
-    }
-    }
+/* .slider {
+  margin: 0 10px;
+} */
 
-    .img>img{
-        opacity: 1;
-        transition: opacity 0.3s ease-in;
-        width: 100%;
-        object-fit: cover;
-    }
-    .carousel{
+@media (max-width: 700px) {
+  .img > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .carousel {
+    margin-left: 0;
+    margin-right: 0;
     z-index: 10;
-    
-    }
+  }
+}
 
-    
-    
+.img > img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel {
+  z-index: 10;
+}
 
-    @media screen and (min-width: 720px){
-        .img img {
-            object-fit: cover;
-            height: 600px!important;
-        }
+@media screen and (min-width: 720px) {
+  .img img {
+    object-fit: cover;
+    height: 600px !important;
+  }
 
-        .bg {
-            position: fixed; 
-            top: -50%; 
-            left: -50%; 
-            width: 200%; 
-            height: 200%;
-          }
-          .bg img {
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            right: 0; 
-            bottom: 0; 
-            margin: auto; 
-            min-width: 50%;
-            min-height: 50%;
-          }
-    }
+  .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  .bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  }
+}

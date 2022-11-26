@@ -1,197 +1,77 @@
 import React from "react";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
 import styles from "../styles/Carousel.module.css";
 import Image from "next/image";
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const classes = {
   root: {
     position: "relative",
   },
-  slide: {
-    minHeight: 250,
-    color: "#fff",
-  },
-  slide1: {
-    // backgroundColor: '#FEA900',
-  },
-  slide2: {
-    // backgroundColor: '#B3DC4A',
-  },
-  slide3: {
-    // backgroundColor: '#6AC0FF',
-  },
-  slide1: {
-    // backgroundColor: '#FEA900',
-  },
-  slide2: {
-    // backgroundColor: '#B3DC4A',
-  },
-  slide3: {
-    // backgroundColor: '#6AC0FF',
-  },
-  slide1: {
-    // backgroundColor: '#FEA900',
-  },
-  slide2: {
-    // backgroundColor: '#B3DC4A',
-  },
-  slide3: {
-    // backgroundColor: '#6AC0FF',
-  },
 };
 
-class DemoAutoPlay extends React.Component {
-  state = {
-    index: 0,
+const Carousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
-  handleChangeIndex = (index) => {
-    this.setState({
-      index,
-    });
-  };
-
-  render() {
-    const { index } = this.state;
-
-    return (
-      <div className={styles.carousel}>
-        <div style={classes.root}>
-          <AutoPlaySwipeableViews
-            index={index}
-            onChangeIndex={this.handleChangeIndex}
-          >
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide2)}
-            >
-              <Image src="/cashew8.jpg" alt="cashew" width={500} height={400} />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide1)}
-            >
-              <Image src="/cashew9.jpg" alt="cashew" width={500} height={400} />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide1)}
-            >
-              <Image
-                src="/cashew15.jpg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide2)}
-            >
-              <Image
-                src="/cashew10.jpeg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide2)}
-            >
-              <Image
-                src="/cashew5.jpeg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide2)}
-            >
-              <Image src="/cashew4.png" alt="cashew" width={500} height={400} />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide3)}
-            >
-              <Image src="/small.jpg" alt="cashew" width={500} height={400} />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide3)}
-            >
-              <Image src="/tree.jpg" alt="cashew" width={500} height={400} />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide1)}
-            >
-              <Image
-                src="/cashew19.jpg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide2)}
-            >
-              <Image
-                src="/cashew16.jpg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide3)}
-            >
-              <Image
-                src="/cashew11.jpg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide1)}
-            >
-              <Image
-                src="/cashew12.jpg"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide2)}
-            >
-              <Image
-                src="/cashew6.webp"
-                alt="cashew"
-                width={500}
-                height={400}
-              />
-            </div>
-            <div
-              className={styles.img}
-              style={Object.assign({}, classes.slide, classes.slide3)}
-            >
-              <Image src="/cashew1.jpg" alt="cashew" width={500} height={400} />
-            </div>
-          </AutoPlaySwipeableViews>
-        </div>
+  return (
+    <div className={styles.carousel}>
+      <div style={classes.root}>
+        <Slider {...settings} className={styles.slider}>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew8.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew9.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew15.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew10.jpeg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew5.jpeg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew4.png" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/small.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/tree.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew19.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew16.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew11.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew12.jpg" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew6.webp" alt="cashew" width={500} height={400} />
+          </div>
+          <div className={styles.img} style={Object.assign({}, classes.slide)}>
+            <Image src="/cashew1.jpg" alt="cashew" width={500} height={400} />
+          </div>
+        </Slider>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default DemoAutoPlay;
+export default Carousel;

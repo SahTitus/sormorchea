@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
-import { Zoom } from "react-reveal";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
 import { List } from "react-bootstrap-icons";
@@ -13,9 +12,9 @@ function Header() {
   return (
     <div className={styles.header}>
       <Link href="/">
-        <Zoom right className={styles.header__zoomEffect}>
+        <div className={styles.header__zoomEffect}>
           <h2 className={styles.logo}>Sormorchea</h2>
-        </Zoom>
+        </div>
       </Link>
       <div className={styles.header__right}>
         <List onClick={showSidebar} className={styles.header__rightIcon} />

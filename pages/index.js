@@ -1,14 +1,30 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import Typical from "react-typical";
-import { Fade, LightSpeed } from "react-reveal";
 import { Accordion, Carousel, WhyUs } from "../components";
+import Reveal from 'react-awesome-reveal';
+import { keyframes } from "@emotion/react";
+
+const fadeInUp = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+`;
 
 function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.carousel}>
+      <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
         <Carousel />
+        </Reveal>
       </div>
 
       <div className={styles.home__typical}>
@@ -31,7 +47,7 @@ function Home() {
         </h1>
       </div>
 
-      <Fade right>
+      <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
         <div className={styles.who__weAreDiv}>
           <div className={styles.who__weArecontainer}>
             <p>Who We Are</p>
@@ -43,7 +59,7 @@ function Home() {
             </p>
           </div>
         </div>
-      </Fade>
+      </Reveal>
 
       <div className={styles.name__marqueeWrapper}>
         <div className={styles.name__marquee}>
@@ -77,21 +93,21 @@ function Home() {
   
       <div className={styles.faqs}>
         <p className={styles.faqs__caption} >FAQs</p>
-        <LightSpeed left>
+        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
           <Accordion />
-        </LightSpeed>
-        <Fade left>
+        </Reveal>
+        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
           <Accordion />
-        </Fade>
-        <LightSpeed left>
+        </Reveal>
+        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
           <Accordion />
-        </LightSpeed>
-        <Fade right>
+        </Reveal>
+        <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
           <Accordion />
-        </Fade>
-        <LightSpeed right>
+        </Reveal>
+        <Reveal right>
           <Accordion />
-        </LightSpeed>
+        </Reveal>
       </div>
     </div>
   );

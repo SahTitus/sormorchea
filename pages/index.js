@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import Typical from "react-typical";
-import { Fade } from "react-reveal";
+import { Fade, LightSpeed } from "react-reveal";
 import { Accordion, Carousel, WhyUs } from "../components";
-import LightSpeed from "react-reveal/LightSpeed";
 
 function Home() {
   return (

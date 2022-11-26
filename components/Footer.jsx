@@ -1,11 +1,13 @@
-import { Facebook, Instagram, YouTube } from "@mui/icons-material";
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import {
   EnvelopeFill,
+  Facebook,
   GeoAltFill,
+  Instagram,
   TelephoneFill,
   Whatsapp,
+  Youtube,
 } from "react-bootstrap-icons";
 import Link from "next/link";
 
@@ -79,7 +81,7 @@ function Footer() {
           <div className={styles.footer__followUsOption}>
             <Facebook className={styles.footer__followUsIcon} />
             <Instagram className={styles.footer__followUsIcon} />
-            <YouTube className={styles.footer__followUsIcon} />
+            <Youtube className={styles.footer__followUsIcon} />
           </div>
         </div>
       </div>

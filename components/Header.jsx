@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
-import { Flip, Zoom } from "react-reveal";
+import { Zoom } from "react-reveal";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
-import { Menu } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
+import { List } from "react-bootstrap-icons";
 
 function Header() {
   const [sidebar, setSidebar] = useState(false);
@@ -19,10 +18,7 @@ function Header() {
         </Zoom>
       </Link>
       <div className={styles.header__right}>
-        <IconButton aria-label="menu">
-          <Menu onClick={showSidebar} className={styles.header__rightIcon} />
-        </IconButton>
-
+        <List onClick={showSidebar} className={styles.header__rightIcon} />
         <div
           onClick={showSidebar}
           className={
@@ -31,7 +27,7 @@ function Header() {
               : `${styles.header__rightSidebar}`
           }
         >
-          <Sidebar close={showSidebar}/>
+          <Sidebar close={showSidebar} />
         </div>
       </div>
     </div>

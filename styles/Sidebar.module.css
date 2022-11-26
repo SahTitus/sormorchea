@@ -14,12 +14,11 @@
   justify-content: flex-end;
 }
 
-.closeBtn__wrapper {
-  margin: 20px !important;
-}
-
 .close {
   color: #fff;
+  margin: 15px !important;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .sidebar__bottom {

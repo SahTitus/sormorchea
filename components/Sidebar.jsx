@@ -1,20 +1,13 @@
 import React from "react";
 import styles from "../styles/Sidebar.module.css";
 import Link from "next/link";
-import { IconButton } from "@mui/material";
-import { Clear } from "@mui/icons-material";
+import { X } from "react-bootstrap-icons";
 
 const Sidebar = ({ close }) => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.closeBtn}>
-        <IconButton
-          className={styles.closeBtn__wrapper}
-          aria-label="close-sidebar"
-          onClick={close}
-        >
-          <Clear className={styles.close} />
-        </IconButton>
+        <X onClick={close} className={styles.close} />
       </div>
 
       <div className={styles.sidebar__bottom}>

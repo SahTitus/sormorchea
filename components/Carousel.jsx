@@ -1,20 +1,6 @@
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import Pc1 from '../images/Pc1.jpg'
-import Pc from '../images/Pc.jpg'
-// import Pagination from './Pagination';
-import Pc2 from '../images/BnB.jpg'
-import PVB from '../images/PVB.jpg'
-import Pc3 from '../images/PB.jpg'
-import Sun from '../images/Sun.jpg'
-import Stu from '../images/Stu.jpg'
-import Pc6 from '../images/Pc6.jpg'
-import Pc8 from '../images/Pc8.jpg'
-import PQu from '../images/PQu.jpg'
-import Pc7 from '../images/Pc7.jpg'
-import ForeB from '../images/ForeB.jpg'
-import ForSm from '../images/ForSm.jpg'
 import styles from '../styles/Carousel.module.css'
 import { Zoom } from 'react-reveal';
 import Image from 'next/image';

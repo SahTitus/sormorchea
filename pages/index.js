@@ -1,13 +1,8 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import Typical from "react-typical";
-import ProSF from "../images/ProSF.jpg";
-import ProW from "../images/ProW.jpg";
-import ProWa from "../images/ProWa.jpg";
-import ProAgric from "../images/ProAgric.jpg";
 import { Fade } from "react-reveal";
 import { Accordion, Carousel, WhyUs } from "../components";
-import Image from "next/image";
 import LightSpeed from "react-reveal/LightSpeed";
 
 function Home() {

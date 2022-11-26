@@ -1,7 +1,6 @@
 import { Facebook, Instagram, YouTube } from "@mui/icons-material";
 import React from "react";
 import styles from "../styles/Footer.module.css";
-import LogoD from "../images/LogoD.jpg";
 import {
   EnvelopeFill,
   GeoAltFill,

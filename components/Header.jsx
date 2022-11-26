@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
-import LogoD from "../images/LogoD.jpg";
 import { Flip, Zoom } from "react-reveal";
 import Link from "next/link";
 import Sidebar from "./Sidebar";

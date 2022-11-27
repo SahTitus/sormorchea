@@ -11,9 +11,9 @@ const Question = ({ title, info }) => {
         <p className={styles.title}>
           How much does the cashew cost per kg?
         </p>
-        <button className={styles.btn} type="button" aria-label="expand" onClick={() => setExpanded(!expanded)}>
+        <div className={styles.btn} onClick={() => setExpanded(!expanded)}>
           {expanded ? <Dash /> : <Plus />}
-        </button>
+        </div>
       </header>
       {expanded && (
         <p className={styles.answer}>

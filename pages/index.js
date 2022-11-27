@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import { Accordion, Carousel, WhyUs } from "../components";
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
@@ -27,7 +27,7 @@ function Home() {
         </Reveal>
       </div>
 
-      <div className={styles.home__typical}>
+      {/* <div className={styles.home__typical}>
         <h1>
           <Typical
             loop={Infinity}
@@ -45,7 +45,7 @@ function Home() {
             ]}
           />
         </h1>
-      </div>
+      </div> */}
 
       <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
         <div className={styles.who__weAreDiv}>
